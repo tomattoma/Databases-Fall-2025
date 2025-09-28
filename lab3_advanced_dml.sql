@@ -37,7 +37,7 @@ VALUES ('Rin', 'Itoshi', 'Marketing' );
 
 --3. INSERT with DEFAULT values
 INSERT INTO employees (first_name, last_name, department, hire_date)
-VALUES ('Kotaro', 'Bokuto', 'IT', 2025-05-24);
+VALUES ('Kotaro', 'Bokuto', 'IT', '2025-05-24');
 
 --4. INSERT multiple rows in single statement 
 INSERT INTO departments(dept_name, budget, manager_id)
@@ -207,3 +207,4 @@ UPDATE projects
 SET end_date = end_date - INTERVAL '30 days'
 WHERE budget > 50000
 AND dept_id IN (1,3);
+
